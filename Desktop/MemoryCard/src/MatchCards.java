@@ -66,5 +66,14 @@ public class MatchCards {
 
     void shuffleCards(){
         System.out.println(cardSet);
+        //shuffle
+        for (int i=0; i<cardSet.size(); i++) {
+            int j=(int) (Math.random() * cardSet.size()); //get random index
+            //swap
+            Card temp = cardSet.get(i);
+            cardSet.set(i, cardSet.get(j));
+            cardSet.set(j, temp);
+        }
+        System.out.println(cardSet);
     }
 }
