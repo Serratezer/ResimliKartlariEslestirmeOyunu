@@ -28,7 +28,7 @@ public class MatchCards extends JFrame {
     private boolean gameReady = false;
 
     public MatchCards() {
-        super("Disney Match Cards"); // JFrame başlığı
+        super("Disney Match Cards"); // JFrame basligi
         initializeCardBack();
         gameBoard = new GameBoard(cardList, cardWidth, cardHeight);
         setupUI();
@@ -142,5 +142,5 @@ public class MatchCards extends JFrame {
         gameReady = false;
         restartButton.setEnabled(false);
         setupGameBoard();
-    }
+    }
 }
